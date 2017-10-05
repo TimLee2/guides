@@ -23,15 +23,15 @@ Note: The style `double list[]` is not preferred as it comes from the C/C++ lang
 
     dataType[] name_of_array = new dataType[arraySize];
 
-## Code snippets of the above syntax:
+## Code snippet of the above syntax:
 
     double[] List = new double[10];
 
-## Another way to create an Array:
+## Another way to create and initialize an Array:
 
     dataType[] name_of_array = {value0, value1, ..., valuek};
 
-## Code snippets of above syntax:
+## Code snippet of above syntax:
 
     double[] list = {1, 2, 3, 4};
 
@@ -54,3 +54,27 @@ Output:
     8
 
 Source: <a href='https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html' target='_blank' rel='nofollow'>Java Arrays</a>
+
+## Multidimensional Arrays:
+
+### Declaration:
+
+    dataType[][] name_of_array = new dataType[arraySize][arraySize]; //preferred way
+    or
+    dataType name_of_array[][] = new dataType[arraySize][arraySize]; //works but not preferred way
+    
+## Code snippets of above syntax:
+
+    int[][] a = new int[5][2]; //preferred way
+    or
+    int a[][] = new int[5][2]; //works but not preferred way
+    
+### Initialization:
+
+    name_of_array[element][element] = value;
+
+## Code snippets of above syntax:
+
+    a[0][0] = 1;
+    a[0][1] = 2;
+    a[2][1] = 5;
